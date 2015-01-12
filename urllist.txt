@@ -1,0 +1,15 @@
+http://bitcoinfoundation.org/
+http://bitcoinfoundation.org/bitcoincore/
+http://bitcoinfoundation.org/transparency/
+http://bitcoinfoundation.org/members/
+http://bitcoinfoundation.org/index.html
+http://bitcoinfoundation.org/affiliates/
+http://bitcoinfoundation.org/blog/
+http://bitcoinfoundation.org/contact/
+http://bitcoinfoundation.org/donate/
+http://bitcoinfoundation.org/bitcoincore/index.html
+http://bitcoinfoundation.org/transparency/index.html
+http://bitcoinfoundation.org/affiliates/index.html
+http://bitcoinfoundation.org/blog/index.html
+http://bitcoinfoundation.org/contact/index.html
+http://bitcoinfoundation.org/donate/index.html

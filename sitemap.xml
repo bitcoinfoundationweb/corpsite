@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://bitcoinfoundation.org/</loc>
+  <lastmod>2014-12-29T20:57:49+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://bitcoinfoundation.org/bitcoincore/</loc>
+  <lastmod>2014-12-29T23:08:34+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://bitcoinfoundation.org/transparency/</loc>
+  <lastmod>2014-12-24T15:18:08+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://bitcoinfoundation.org/members/</loc>
+  <lastmod>2014-12-30T01:30:01+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://bitcoinfoundation.org/index.html</loc>
+  <lastmod>2014-12-29T20:57:49+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://bitcoinfoundation.org/affiliates/</loc>
+  <lastmod>2014-12-23T18:12:23+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://bitcoinfoundation.org/blog/</loc>
+  <lastmod>2014-12-24T14:37:39+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://bitcoinfoundation.org/contact/</loc>
+  <lastmod>2014-12-23T19:06:48+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://bitcoinfoundation.org/donate/</loc>
+  <lastmod>2014-12-23T17:48:42+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://bitcoinfoundation.org/bitcoincore/index.html</loc>
+  <lastmod>2014-12-29T23:08:34+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://bitcoinfoundation.org/transparency/index.html</loc>
+  <lastmod>2014-12-24T15:18:08+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://bitcoinfoundation.org/affiliates/index.html</loc>
+  <lastmod>2014-12-23T18:12:23+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://bitcoinfoundation.org/blog/index.html</loc>
+  <lastmod>2014-12-24T14:37:39+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://bitcoinfoundation.org/contact/index.html</loc>
+  <lastmod>2014-12-23T19:06:48+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://bitcoinfoundation.org/donate/index.html</loc>
+  <lastmod>2014-12-23T17:48:42+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+</urlset>
