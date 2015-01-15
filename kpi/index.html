@@ -4,12 +4,11 @@
 <HEAD>
 	<META charset="UTF-8"> 
 	<META name="viewport" content="width=device-width, initial-scale=1"> 
-	<TITLE>Bitcoin France | Supporting the development of Bitcoin</TITLE> 
+	<TITLE>The Bitcoin Foundation | Supporting the development of Bitcoin</TITLE> 
 	<LINK href="/favicon.png" rel="shortcut icon"> 
-	<LINK href="/join/index_files/formsmain.css" rel="stylesheet" type="text/css">
-	<LINK href="/join/index_files/gravity-mod.css" rel="stylesheet" type="text/css">	
 	<LINK href="http://gmpg.org/xfn/11" rel="profile"> 
 	<SCRIPT src="/index_files/modernizr.min.js"></SCRIPT>
+	<link href="index_files/jquery.circliful.css" rel="stylesheet" type="text/css" />
 	<link href='https://fonts.googleapis.com/css?family=Karla:300,300italic,400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 	<link href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	<script type="text/javascript" src="https://use.typekit.net/niu3ttz.js"></script>
@@ -18,30 +17,84 @@
 	<LINK id="launchframe-style-custom-css" href="/index_files/wb-bootstrap.min.css" rel="stylesheet" type="text/css" media="all"> 
 	<SCRIPT src="/index_files/jquery.js" type="text/javascript"></SCRIPT>
 	<SCRIPT src="/index_files/jquery-migrate.min.js" type="text/javascript"></SCRIPT>
-	<LINK href="/index_files/pricing.css" rel="stylesheet" type="text/css">
 	<STYLE type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</STYLE>
 	<SCRIPT language="javascript" src="/index_files/jquery-1.11.1.min.js"></SCRIPT>
 	<SCRIPT language="javascript" src="/index_files/jquery-ui.js"></SCRIPT>
-	<LINK href="/index_files/jquery-ui.css" rel="stylesheet">
+	<script src="index_files/jquery.circliful.min.js"></script>
+	<script src="index_files/highcharts.js"></script>
+	<script src="index_files/modules/exporting.js"></script>
+	<script src="index_files/kpi.js"></script>
+	<LINK href="/index_files/jquery-ui.css" rel="stylesheet"> 
 	<style>
-		.core_box {
-			width: 87%;
-			z-index: 1;
+		
+		.kpiBox {
+			background: rgba(236,236,236,1);
+			margin-bottom: 20px;
+			width:100%;
+			padding:20px 0 0 0;
+		}
+
+		.kpiBox .arrow {
+			cursor:pointer;
+			text-align:center;
+			font-size:44px;
+			color:#b3b3b3;
+		}
+		.kpiBox .chart {
+			display: none;
+			padding : 5px;
+			width: 100%;
+		}	
+		.kpiBox .dataPoint {
+			font-size:46px;
+			font-weight:bold;
+			color:#486e9d;
+			margin:12px;
+			text-align:center;
+		}
+		.kpiBox .dataLabel {
+			font-size:18px;
+			font-weight:bold;
+			color:#676765;
+			text-align:center;
+			padding: 0 0 10px 0;
+		}
+		.kpiBox .highCharts {
+			width: 100%;
 			margin: 0 auto;
-			position: relative;
-			min-height: 1px;
-			padding: 25px;
-			border: 1px solid #e1e1e1;
+		}
+		#bfScore {
+			padding:0 0 50px 0;
+		}
+		.circle-text {
+			font-size:96px !important;
+			font-weight:800;
+			font-family: 'Open Sans', sans-serif;
+			color:rgba(118,183,0,1) !important;
+			line-height:200px;
+			
+		}
+		.circle-info-half {
+			margin:85px 0 0 0;
+			font-weight:bold;
+		}
+		.fa-lg {
+			font-size:.6em;
+			line-height:.75em;
+			vertical-align:-15%;
+
+		@media screen and (min-width: 768px) { 
+			#bfScore {
+				margin:0 auto 0 auto;
+			}
 		}	
 		
-		.button_labels {
-			font-weight:bold; font-size: 18px;margin-bottom:0;
-		}
-		
-		.button_padding {
-			margin-bottom: 15px;
-		}
-	</style>	
+		@media screen and (min-width: 768px) and (max-width: 1024px) { 
+			.dataPoint {
+				font-size:30px !important;
+			}
+		}		
+	</style>
 </HEAD> 
 
 <BODY class="page page-template custom-background">
@@ -64,8 +117,9 @@
 						<LI class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18077" id="menu-item-18077"><A href="https://bitcoin.org/en/download">Download Bitcoin Core</A></LI>
 						<LI class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18128" id="menu-item-18128"><A href="/bitcoincore/">Core Updates</A></LI>
 						<LI class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18084" id="menu-item-18084"><A href="/transparency/">Transparency</A></LI>
-						<LI class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17067" id="menu-item-17067"><A href="/members/">Members</A></LI>
-						<LI class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-18119" id="menu-item-18119"><A href="/join">Join</A></LI>
+						<LI class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17067" id="menu-item-17067"><A href="/members/">Members</A></LI>						
+						<LI class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18119" id="menu-item-18119"><A href="/join">Join</A></LI>
+						<LI class="menu-item menu-item-type-custom current-menu-item current_page_item menu-item-object-custom menu-item-18119" id="menu-item-18119"><A href="/join">KPI</A></LI>
 						<LI class="menu-item menu-item-type-custom menu-item-object-custom menu-item-18127" id="menu-item-18127"><A href="https://members.bitcoinfoundation.org/">Login</A></LI>
 					</UL>
 				</DIV>
@@ -77,277 +131,122 @@
 </HEADER><!-- #masthead -->
 	 
 <DIV class="site-content" id="content">
-	<DIV class="page-header  has-background-image" style="margin-bottom: 0px;">
-		<DIV class="page-header-background-image" style='background-image: url("/join/index_files/global3.jpg");'></DIV>
+	<DIV class="page-header  has-background-image">
+		<DIV class="page-header-background-image" style='background-image: url("index_files/kpi_header.jpg");'></DIV>
 		<DIV class="container">
 			<DIV class="row">
 				<DIV class="col-sm-12">
-					<img src="/index_files/flags/france.jpg" alt="Bitcoin France" style="height: 75px;"/>
-					<DIV class="page-headline" style="font-size: 34px;margin-top: 25px;margin-bottom:15px;">Join and support Bitcoin France<p style='font-size: 18px;'>Standardization through Bitcoin Core advances the development of an open and participatory digital economy. Your support helps fund development of Bitcoin Core and creates new avenues for people to participate in the bitcoin project.</p></DIV>
+					<DIV class="page-headline">Key Performance Indicators</DIV>
 				</DIV>
 			</DIV>
 		</DIV>
 	</DIV>
-
 	<DIV class="container">
-		<br/>
-	
 		<DIV class="row">
-			<div class="core_box">
-			<div class="flex_column av_three_fifth first  avia-builder-el-10  el_after_av_hr  el_before_av_two_fifth  ">
-				<div class='av_promobox avia-button-no  avia-builder-el-11  avia-builder-el-no-sibling '>		
-					<div class='avia-promocontent'>
-						<p><span style="font-size: 24pt;"><strong style="color:#2d5c88;">Friend of Bitcoin France</strong></span></p>
-					</div>
-				</div>
-			</div>
-			<div class="flex_column av_two_fifth   avia-builder-el-12  el_after_av_three_fifth  avia-builder-el-last  ">
-				<div class='avia_textblock ' itemprop="text" ><p><span style="font-size: 14pt;">Submit your email address to receive the weekly Bits &amp; Bytes newsletter.<br />
-					<div class='gf_browser_chrome gform_wrapper' id='gform_wrapper_1' >
-						<a id='gf_1' name='gf_1' class='gform_anchor' ></a>
-						<form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
-						<input type=hidden name="oid" value="00D20000000m7tp">
-						<input type=hidden name="retURL" value="https://bitcoinfoundation.org/newsletter/">
-						<input type=hidden name="country" value="France"/>
-						<input  id="00N20000009b7qu" maxlength="200" name="00N20000009b7qu" size="20" type="hidden" value="friend" /><br>
-						<div class='gform_body'>
-							<ul id='gform_fields_1' class='gform_fields top_label description_below'>				
-								<li id='field_1_2' class='gfield    gf_left_half           gfield_contains_required' >
-									<label class='gfield_label' for='input_1_2'>Email<span class='gfield_required'>*</span></label><div class='ginput_container'>
-									<input name='email' id='email' type='text' value='' class='large'  tabindex='1' style="width: 90%;"  /></div>
-								</li>
-							</ul></div>
-							<div class='gform_footer top_label'> 
-								<input type="submit" name="submit" tabindex='2'>						
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-			</div>
+			<DIV class="col-sm-9 col-md-9 col-md-offset-0">			
+				<h3>This would be an explanation of how the index is created.  Still open to any suggestions.</h3>
+			</DIV>
+			<DIV class="col-sm-3 col-md-3 col-md-offset-0">
+				<div id="bfScore" data-dimension="200" data-text="92" data-info="Foundation Index" data-width="3" data-fontsize="48" data-percent="92" data-fgcolor="#76b701" data-bgcolor="#eee" data-fill="#fff"></div>
+			</DIV>			
 		</DIV>
 		
-		<DIV class="row" style="text-align: center;">
-			<H2>INDIVIDUAL SUPPORTERS</H2>
-		</DIV>
-		<DIV class="row">
-			<DIV class="smart-grids">
-			<DIV class="smart-wrapper">
-			<DIV class="smart-pricing">
-			<DIV class="pricing-tables separated-tables elegant-style two-colm">
-				<!--<DIV class="colm">
-					<DIV class="colm-list">
-						<DIV class="pricing-header header-colored">
-							<H1 class="monoblue-top-2">FRIEND</H1>
-							<H2 class="monoblue-bottom-2"><SPAN>FREE</SPAN><BR><BR>for life</H2>
-						</DIV>
-						<UL>
-							<LI>Bits &amp; Bytes Newsletter</LI>
-							<LI>Discounts and incentives</LI>
-							<LI>-</LI>
-							<LI>-</LI>
-						</UL>
-						<DIV class="pricing-footer"><BUTTON class="pricing-button  monoblue2-btn" type="button" onclick="document.location='https://members-dev.bitcoinfoundation.org/signup?package=1';">Support</BUTTON></DIV>
-					</DIV>
-				</DIV>-->
-				<DIV class="colm">
-					<DIV class="colm-list">
-						<DIV class="pricing-header header-colored">
-							<H1 class="monoblue-top-3">ANNUAL</H1>
-							<H2 class="monoblue-bottom-3"><SPAN>$25</SPAN><BR><BR>per year</H2>
-							<DIV class="ribbon-large"></DIV>
-						</DIV>
-						<!--<UL>
-							<LI>Voting rights</LI>
-							<LI>Bits &amp; Bytes newsletter</LI>  
-							<LI>Member profile</LI>
-							<LI>Social profile badge</LI>
-						</UL>-->
-						<DIV class="pricing-footer"><BUTTON class="pricing-button  monoblue3-btn" type="button" onclick="document.location='https://members.bitcoinfoundation.org/signup/?action=registeruser&subscription=2';">Support</BUTTON></DIV>
-					</DIV>
-				</DIV>
-				<DIV class="colm">
-					<DIV class="colm-list">
-						<DIV class="pricing-header header-colored">
-							<H1 class="monoblue-top-4">LIFETIME</H1>
-							<H2 class="monoblue-bottom-4"><SPAN>$250</SPAN><BR><BR>one time payment</H2>
-						</DIV>
-						<!--<UL>
-							<LI>Voting rights</LI>
-							<LI>Bits &amp; Bytes newsletter</LI>  
-							<LI>Member profile</LI>
-							<LI>Social profile badge</LI>
-						</UL>-->
-						<DIV class="pricing-footer"><BUTTON class="pricing-button  monoblue4-btn" type="button" onclick="document.location='https://members.bitcoinfoundation.org/signup/?action=registeruser&subscription=3';">Support</BUTTON> </DIV>
-					</DIV>
-				</DIV>
-			</DIV>
-			</DIV>
-			</DIV>
-			</DIV>
-		</DIV><!-- #row -->
-
-		<DIV class="row" style="text-align:center;">
-			<H2>INDUSTRY SUPPORTERS</H2>
-		</DIV>
-		<DIV class="row">
-			<DIV class="smart-grids">
-			<DIV class="smart-wrapper">
-			<DIV class="smart-pricing">
-			<DIV class="pricing-tables separated-tables elegant-style four-colm">
-				<div class="colm">
-					<div class="colm-list">
-						<div class="pricing-header header-colored">
-							<h2 class="monoblack-bottom-1"><span>$1,000</span>
-							<br><br>ANNUALLY</h2> 
-						</div>
-						<!--<ul>
-							<li>Voting rights</li>
-							<li>Business profile & logo</li>
-							<li>Electronic member badge</li>
-							<li>Welcome announcement</li>
-							<li>-</li>
-							<li>-</li>
-							<li>-</li>
-							<li>-</li>
-							<li>-</li>
-							<li>-</li>
-							<li>-</li>
-						</ul>-->
-						<div class="pricing-footer"> <button type="button" class="pricing-button monoblack1-btn" onclick="document.location='https://members.bitcoinfoundation.org/signup/?action=registeruser&subscription=6';">Support</button></div>                                               
-					</div>
-				</div>                   
-				<div class="colm">
-					<div class="colm-list">
-						<div class="pricing-header header-colored">
-						  <h2 class="monoblack-bottom-2"><span>$5,000</span>
-						  <br><br>ANNUALLY</h2>
-						</div>
-						<!--<ul>
-							<li>Voting rights</li>
-							<li>Business profile & logo</li>
-							<li>Electronic member badge</li>
-							<li>Welcome announcement</li>
-							<li>Job postings for your company</li>
-							<li>-</li>
-							<li>-</li>
-							<li>-</li>
-							<li>-</li>
-							<li>-</li>
-							<li>-</li>                            
-						</ul>-->
-						<div class="pricing-footer">
-						  <button type="button" class="pricing-button  monoblack2-btn" onclick="document.location='https://members.bitcoinfoundation.org/signup/?action=registeruser&subscription=4&type=business';">Support</button>
-						</div>                                                                   	
-					</div>              
-				</div>
-				<div class="colm">
-					<div class="colm-list">
-						<div class="pricing-header header-colored">
-						  <h2 class="monoblack-bottom-3"><span>$10,000</span><br><br>ANNUALLY</h2>
-							<div class="ribbon-large"> 
-								
-							</div>
-						</div>
-						<!--<ul>
-							 <li>Voting rights</li>
-							<li>Business profile & logo</li>
-							<li>Electronic member badge</li>
-							<li>Welcome announcement</li>
-							<li>Job postings for your company</li>
-							<li>Sponsor signage at workshops</li>  
-							<li>Special offers for members</li>   
-							<li>1 sponsored ad in Bits & Bytes</li>                              
-							<li>-</li>
-							<li>-</li>
-							<li>-</li>
-						</ul>-->
-						<div class="pricing-footer">
-						  <button type="button" class="pricing-button  monoblack3-btn" onclick="document.location='https://members.bitcoinfoundation.org/signup/?action=registeruser&subscription=5&type=business';">Support</button>
-						</div>                               
-					</div>              
-				</div>
-				<div class="colm">
-					<div class="colm-list">
-						<div class="pricing-header header-colored">
-						  <h2 class="monoblack-bottom-4"><span>$25,000</span><br><br>ANNUALLY</h2>   
-						</div>
-						<!--<ul>
-							<li>Voting rights</li>
-							<li>Business profile & Logo</li>
-							<li>Electronic member badge</li>
-							<li>Welcome announcement & Blog</li>
-							<li>Press release</li>
-							<li>Job postings for your company</li>
-							<li>Premium sponsor signage</li>
-							<li>Special offers for members</li>
-							<li>1 sponsored ad per month</li>
-							<li>Featured member spotlight</li>
-							<li>Annual core developer briefing</li>
-						</ul>-->
-						<div class="pricing-footer">
-						  <button type="button" class="pricing-button  monoblack4-btn" onclick="document.location='https://members.bitcoinfoundation.org/signup/?action=registeruser&subscription=7';">Support</button>
-						</div>                                
-					</div>             
-				</div>
-			</DIV>
-			</div>
-			</div>
-			</div>
-		</DIV>
-
-		<DIV class="row">
-			<div class="core_box">
-			<div class="flex_column av_three_fifth first  avia-builder-el-10  el_after_av_hr  el_before_av_two_fifth  ">
-				<div class='av_promobox avia-button-no  avia-builder-el-11  avia-builder-el-no-sibling '>		
-					<div class='avia-promocontent'>
-						<p><span style="font-size: 24pt;"><strong style="color:#2d5c88;">Bitcoin Core Supporters</strong></span></p>
-						<p><span style="font-size: 18pt;">$100,000 +</span></p>
-						<p><span style="font-size: 18pt;"><span style="font-size: 14pt;">Receive high-level brand exposure as a premier sponsor of the Bitcoin Core reference implementation, education and training necessary to help Bitcoin grow. </span></span></p>
+		<div class="row">
+			<DIV class="col-sm-4 col-md-4 col-lg-4">			
+				<div class="kpiBox">
+					<div class="dataPoint">115,516&nbsp;<i class="fa fa-arrow-up" style="color:#76b701;"></i></div>
+					<div class="dataLabel">Daily Transactions</div>
+					<div class="arrow"><i class="fa fa-plus-circle fa-lg"></i></div>	
+					<div class="chart">
+						<div id="hcDailyTransactions" class="highCharts"></div>
 					</div>
 				</div>
-			</div>
-			<div class="flex_column av_two_fifth   avia-builder-el-12  el_after_av_three_fifth  avia-builder-el-last  ">
-				<div class='avia_textblock ' itemprop="text" ><p><span style="font-size: 14pt;">Please contact us for more information on how to become a core supporter.<br />
-					<div class='gf_browser_chrome gform_wrapper' id='gform_wrapper_1' >
-						<a id='gf_1' name='gf_1' class='gform_anchor' ></a>
-						<form action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
-						<input type=hidden name="oid" value="00D20000000m7tp">
-						<input type=hidden name="retURL" value="https://bitcoinfoundation.org/confirm/">
-						<input type=hidden name="country" value="France"/>
-						<div class='gform_body'>
-							<ul id='gform_fields_1' class='gform_fields top_label description_below'>
-								<li id='field_1_5' class='gfield               gfield_contains_required' >
-									<label class='gfield_label' for='first_name'>Name<span class='gfield_required'>*</span></label>
-									<div class='ginput_complex ginput_container' id='input_1_5'><span id='input_1_5_3_container' class='ginput_left'>
-									<input type='text' name='first_name' id='first_name' value='' tabindex='5' />						
-									<label for='input_1_5_3'>First</label></span><span id='input_1_5_6_container' class='ginput_right'>
-									<input type='text' name='last_name' id='last_name' value='' tabindex='6' />						
-									<label for='last_name'>Last</label></span><div class='gf_clear gf_clear_complex'></div></div>
-								</li>						
-								<li id='field_1_2' class='gfield    gf_left_half           gfield_contains_required' >
-									<label class='gfield_label' for='input_1_2'>Email<span class='gfield_required'>*</span></label><div class='ginput_container'>
-									<input name='email' id='email' type='text' value='' class='large'  tabindex='7'   /></div>
-								</li>
-								
-								<li id='field_1_3' class='gfield    gf_right_half           gfield_contains_required' >
-									<label class='gfield_label' for='input_1_3'>Phone<span class='gfield_required'>*</span></label>
-									<div class='ginput_container'><input name='phone' id='phone' type='text' value='' class='large'  tabindex='8'   /></div>
-								</li>
-							</ul></div>
-							<div class='gform_footer top_label'> 
-								<input type="submit" name="submit" tabindex='9'>						
-							</div>
-						</form>
+			</DIV>
+			<DIV class="col-sm-4 col-md-4 col-lg-4">	
+				<div class="kpiBox">
+					<div class="dataPoint">2,793,048&nbsp;<i class="fa fa-arrow-up" style="color:#76b701;"></i></div>
+					<div class="dataLabel">Wallet Users</div>					
+					<div class="arrow"><i class="fa fa-plus-circle fa-lg"></i></div>	
+					<div class="chart">
+						<div id="hcWalletUsers" class="highCharts"></div>
 					</div>
-				</div>
-			</div>
-			</div>
-		</DIV>
-	</DIV><!-- #container -->
-</DIV><!-- #content -->	 
-<br/>
-
+				</div>			
+			</DIV>				
+			<DIV class="col-sm-4 col-md-4 col-lg-4">				
+				<div class="kpiBox">
+					<div class="dataPoint">13,722,550&nbsp;<i class="fa fa-arrow-up" style="color:#76b701;"></i></div>
+					<div class="dataLabel">Bitcoins in Circulation</div>				
+					<div class="arrow"><i class="fa fa-plus-circle fa-lg"></i></div>	
+					<div class="chart">
+						<div id="hcCirculation" class="highCharts"></div>
+					</div>
+				</div>			
+			</DIV>
+			<DIV class="col-sm-4 col-md-4 col-lg-4">						
+				<div class="kpiBox">
+					<div class="dataPoint">337&nbsp;<i class="fa fa-arrow-up" style="color:#76b701;"></i></div>
+					<div class="dataLabel">Bitcoin ATMs in Circulation</div>					
+					<div class="arrow"><i class="fa fa-plus-circle fa-lg"></i></div>	
+					<div class="chart">
+						<div id="hcATM" class="highCharts"></div>
+					</div>
+				</div>			
+			</DIV>	
+			<DIV class="col-sm-4 col-md-4 col-lg-4">					
+				<div class="kpiBox">
+					<div class="dataPoint">59,999&nbsp;<i class="fa fa-arrow-down" style="color:#c12323;"></i></div>
+					<div class="dataLabel">Businesses accepting Bitcoin</div>					
+					<div class="arrow"><i class="fa fa-plus-circle fa-lg"></i></div>	
+					<div class="chart">
+						<div id="hcBusinesses" class="highCharts"></div>
+					</div>
+				</div>			
+			</DIV>
+			<DIV class="col-sm-4 col-md-4 col-lg-4">					
+				<div class="kpiBox">
+					<div class="dataPoint">580&nbsp;<i class="fa fa-arrow-up" style="color:#76b701;"></i></div>
+					<div class="dataLabel">Bitcoin companies on AngelList</div>					
+					<div class="arrow"><i class="fa fa-plus-circle fa-lg"></i></div>	
+					<div class="chart">
+						<div id="hcAngelList" class="highCharts"></div>
+					</div>
+				</div>			
+			</DIV>	
+			<DIV class="col-sm-4 col-md-4 col-lg-4">						
+				<div class="kpiBox">
+					<div class="dataPoint">9&nbsp;<i class="fa fa-arrow-down" style="color:#c12323;"></i></div>
+					<div class="dataLabel">Core Commit Activity</div>					
+					<div class="arrow"><i class="fa fa-plus-circle fa-lg"></i></div>	
+					<div class="chart">
+						<div id="hcCoreCommits" class="highCharts"></div>
+					</div>
+				</div>			
+			</DIV>			
+			<DIV class="col-sm-4 col-md-4 col-lg-4">					
+				<div class="kpiBox">
+					<div class="dataPoint">430&nbsp;<i class="fa fa-arrow-up" style="color:#76b701;"></i></div>
+					<div class="dataLabel">Core Client Daily Downloads</div>					
+					<div class="arrow"><i class="fa fa-plus-circle fa-lg"></i></div>	
+					<div class="chart">
+						<div id="hcCoreDownloads" class="highCharts"></div>
+					</div>
+				</div>			
+			</DIV>	
+			<DIV class="col-sm-4 col-md-4 col-lg-4">					
+				<div class="kpiBox">
+					<div class="dataPoint">301,646,358&nbsp;<i class="fa fa-arrow-down" style="color:#c12323;"></i></div>
+					<div class="dataLabel">Network Hash Rate</div>					
+					<div class="arrow"><i class="fa fa-plus-circle fa-lg"></i></div>	
+					<div class="chart">
+						<div id="hcNetworkRate" class="highCharts"></div>
+					</div>
+				</div>			
+			</DIV>				
+		</div>
+	</DIV>
+	<p>&nbsp;</p>
+</DIV><!-- #content -->	
+ 
 <FOOTER class="site-footer" id="colophon" role="contentinfo">
 <DIV class="container">
 	<DIV class="row top-row">
@@ -417,6 +316,5 @@
   ga('create', 'UA-56133351-1', 'auto');
   ga('send', 'pageview');
 </SCRIPT>
-
 </BODY>
 </HTML>
