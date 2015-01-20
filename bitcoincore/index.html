@@ -70,6 +70,48 @@
 			<DIV class="col-sm-12 col-md-9 col-md-offset-1 blog-content">
 				<ARTICLE class="blog-post">
 				<HEADER class="post-header">
+					<A class="title-link" href="https://bitcoinfoundation.org/bitcoincore/"><H2 class="post-title">Bitcoin Core - Version 0.10 Update</H2></A>											 
+					<DIV class="post-meta">by Cory Fields, Developer, January 20, 2014</DIV>
+					<DIV class="social-links">
+						<A class="share-twitter" href="http://twitter.com/intent" data-share-message="Bitcoin Core - Version 0.10 Update" data-share-url="https://bitcoinfoundation.org/bitcoincore/"><I class="fa fa-twitter"></I></A>
+						<A class="share-facebook" href="http://facebook.com/sharer.php" data-share-message="Bitcoin Core - Version 0.10 Update" data-share-url="https://bitcoinfoundation.org/bitcoincore/"><I class="fa fa-facebook"></I></A>
+					</DIV>
+				</HEADER>
+				<DIV class="post-content-wrap">					
+					<P>The next version of Bitcoin Core, 0.10, is almost ready for final release. Last week we saw the release of Release Candidate 3 which fixed several bugs including one that could cause clients to stop downloading new blocks in some cases. Barring any last-minute changes, Release Candidate 4 is likely to be tagged this week. If all goes well it could become the final release.</P>
+					<P>For a detailed look at what’s changed for 0.10 lately, have a look at the milestone at github: <a href="https://github.com/bitcoin/bitcoin/issues?q=milestone%3A0.10.0" target="_blank">https://github.com/bitcoin/bitcoin/issues?q=milestone%3A0.10.0</a></P>
+					<p>The primary focus for Release Candidate 3 has been working through the issues caused by the latest OpenSSL release. See here for a detailed explanation from Gregory Maxwell: <a href="/bitcoincore/#gmaxwell">Click here</a>.</P>
+					<p>All users, especially Linux, should be sure to update Bitcoin Core to a fixed version (preferably the official releases from <a href="https://bitcoin.org/en/download" target="_blank">bitcoin.org</a> which were not affected at all), and avoid updating OpenSSL until then. Version 0.10 will also be a safe upgrade path.</p>
+					<p>There seems to be a general consensus among core devs that a soft-fork is necessary to prevent this type of issue (non-strict DER validation, as well as 3rd party libraries influencing consensus) from coming up again. Proposals are in the works and discussions are ongoing.</p>
+				</DIV>
+				</ARTICLE>
+				
+				<ARTICLE class="blog-post">
+				<HEADER class="post-header">
+					<A class="title-link" href="https://bitcoinfoundation.org/bitcoincore/"><H2 class="post-title">January 2015</H2></A>											 
+					<DIV class="post-meta">by Core Dev Team, Last Updated on January 20, 2014</DIV>
+					<DIV class="social-links">
+						<A class="share-twitter" href="http://twitter.com/intent" data-share-message="January 2015" data-share-url="https://bitcoinfoundation.org/bitcoincore/"><I class="fa fa-twitter"></I></A>
+						<A class="share-facebook" href="http://facebook.com/sharer.php" data-share-message="January 2015" data-share-url="https://bitcoinfoundation.org/bitcoincore/"><I class="fa fa-facebook"></I></A>
+					</DIV>
+				</HEADER>
+				<DIV class="post-content-wrap">
+					<H4>The 0.10.0 Milestone is weeks away from being released.  Please check back here for the latest updates as we will have a full commentary on release notes and an enumeration of changes that occurred since 0.9.3</H4>
+					<P>The following is a summation of important notices and pull requests currently available at the <A href="https://github.com/bitcoin/bitcoin/pulls?q=milestone%3A0.10.0+is%3Apr+is%3Aclosed"> Bitcoin Core Github repository</A>.</P>
+					<UL>
+						<LI>Gavin posted his testing results of 20MB blocks. <a href="http://gavintech.blogspot.de/2015/01/twenty-megabytes-testing-results.html">Read More</a></LI>					
+						<LI>RPC HTTP Keep-Alives restored to their defaults. <a href="https://github.com/bitcoin/bitcoin/pull/5674">Read More</a></li>
+						<LI>Broken unicode characters on OS-X 10.10 have been fixed. <a href="https://github.com/bitcoin/bitcoin/pull/5671">Read More</a></li>
+						<LI>A patch was crated to shutdown on LevelDB read errors from the chainstate. Applies cleanly to 0.10.0 <a href="https://github.com/bitcoin/bitcoin/pull/5619">Read More</a></li>					
+						<LI>Bitcoin core 0.10.0 Release notes available. <a href="https://github.com/bitcoin/bitcoin/blob/0.10/doc/release-notes.md">Read More</a></li>
+						<LI>A blog posting by Gavin explaining his initial test results of raising the maximum block size from 1MB <a href="http://gavintech.blogspot.com/2015/01/looking-before-scaling-up-leap.html">Read More</a></li>
+					</UL>
+				</DIV>
+				</ARTICLE>
+				
+				<a name="gmaxwell"></a>
+				<ARTICLE class="blog-post">
+				<HEADER class="post-header">
 					<A class="title-link" href="https://bitcoinfoundation.org/bitcoincore/"><H2 class="post-title">Bitcoin Core Update</H2></A>											 
 					<DIV class="post-meta">Bitcoin Core Developer Gregory Maxwell via Sourceforge, Posted January 9, 2014</DIV>
 					<DIV class="social-links">
@@ -154,26 +196,7 @@
 					That miner has been contacted and has fixed their software, so a 
 					soft-fork with no chain forking should be possible.</p>
 				</DIV>
-				</ARTICLE>
-				
-				<ARTICLE class="blog-post">
-				<HEADER class="post-header">
-					<A class="title-link" href="https://bitcoinfoundation.org/bitcoincore/"><H2 class="post-title">January 2015</H2></A>											 
-					<DIV class="post-meta">by Core Dev Team, Last Updated on January 9, 2014</DIV>
-					<DIV class="social-links">
-						<A class="share-twitter" href="http://twitter.com/intent" data-share-message="January 2015" data-share-url="https://bitcoinfoundation.org/bitcoincore/"><I class="fa fa-twitter"></I></A>
-						<A class="share-facebook" href="http://facebook.com/sharer.php" data-share-message="January 2015" data-share-url="https://bitcoinfoundation.org/bitcoincore/"><I class="fa fa-facebook"></I></A>
-					</DIV>
-				</HEADER>
-				<DIV class="post-content-wrap">
-					<H4>The 0.10.0 Milestone is weeks away from being released.  Please check back here for the latest updates as we will have a full commentary on release notes and an enumeration of changes that occurred since 0.9.3</H4>
-					<P>The following is a summation of important notices and pull requests currently available at the <A href="https://github.com/bitcoin/bitcoin/pulls?q=milestone%3A0.10.0+is%3Apr+is%3Aclosed"> Bitcoin Core Github repository</A>.</P>
-					<UL>
-						<LI>Bitcoin core 0.10.0 Release notes available. <a href="https://github.com/bitcoin/bitcoin/blob/0.10/doc/release-notes.md">Read More</a></li>
-						<LI>A blog posting by Gavin explaining his initial test results of raising the maximum block size from 1MB <a href="http://gavintech.blogspot.com/2015/01/looking-before-scaling-up-leap.html">Read More</a></li>
-					</UL>
-				</DIV>
-				</ARTICLE>
+				</ARTICLE>			
 				
 				<ARTICLE class="blog-post">
 				<HEADER class="post-header">
