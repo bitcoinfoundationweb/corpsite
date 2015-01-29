@@ -60,7 +60,7 @@ $(document).ready(function() {
 				x: -20
 			},
 			xAxis: {
-				categories: ['Jan 08','Jan 09', 'Jan 10', 'Jan 11', 'Jan 12', 'Jan 13', 'Jan 14','Jan 15']
+				categories: ['Jan 22','Jan 23', 'Jan 24', 'Jan 25', 'Jan 26', 'Jan 27', 'Jan 28','Jan 29']
 			},
 			yAxis: {
 				title: {
@@ -81,7 +81,7 @@ $(document).ready(function() {
 			},
 			series: [{
 				name: 'Total Transacitons',
-				data: [93753,87160,92912,99126,105895,98185,107868,115516]
+				data: [104481,112540,87047,100251,89630,82358,105423,86914]
 			}]
 		});		
 	}
@@ -118,8 +118,8 @@ $(document).ready(function() {
 				borderWidth: 0
 			},
 			series: [{
-				name: 'Total Transacitons',
-				data: [13695100,13705975,13709500,13713175,13717275,13719900,13723675]
+				name: 'Total Coins',
+				data: [13695100,13705975,13709500,13713175,13717275,13719900,13776175]
 			}]
 		});		
 	}
@@ -170,11 +170,11 @@ $(document).ready(function() {
 				x: -20 //center
 			},
 			subtitle: {
-				text: 'Source: <a href="http://sourceforge.net/projects/bitcoin/" target="_blank">http://sourceforge.net/projects/bitcoin/</a>',
+				text: 'Source: <a href="http://sourceforge.net/projects/bitcoin/files/stats/timeline" target="_blank">http://sourceforge.net/projects/bitcoin/files/stats/timeline</a>',
 				x: -20
 			},
 			xAxis: {
-				categories: ['Jan 09', 'Jan 10', 'Jan 11', 'Jan 12', 'Jan 13', 'Jan 14']
+				categories: ['Jan 24', 'Jan 25', 'Jan 26', 'Jan 27', 'Jan 28', 'Jan 29']
 			},
 			yAxis: {
 				title: {
@@ -194,8 +194,8 @@ $(document).ready(function() {
 				borderWidth: 0
 			},
 			series: [{
-				name: 'Total Transacitons',
-				data: [356,397,480,313,351,430]
+				name: 'Total Downloads',
+				data: [504,346,468,340,338,92]
 			}]
 		});		
 	}
@@ -233,7 +233,7 @@ $(document).ready(function() {
 			},
 			series: [{
 				name: 'Total Users',
-				data: [1930905,2107985,2276636,2407862,2519771,2657865,2793048]
+				data: [1930905,2107985,2276636,2407862,2519771,2657865,2855601]
 			}]
 		});		
 	}
@@ -326,7 +326,7 @@ $(document).ready(function() {
 				x: -20
 			},
 			xAxis: {
-				categories: ['Nov 30','Dec 7', 'Dec 14', 'Dec 21', 'Dec 28', 'Jan 4','Jan 11']
+				categories: ['Dec 7','Dec 14', 'Dec 21', 'Dec 28', 'Jan 4', 'Jan 11','Jan 18']
 			},
 			yAxis: {
 				title: {
@@ -347,7 +347,7 @@ $(document).ready(function() {
 			},
 			series: [{
 				name: 'Total Commits',
-				data: [30,20,40,17,24,18,9]
+				data: [20,41,17,28,24,20,5]
 			}]
 		});
 	}
@@ -364,11 +364,11 @@ $(document).ready(function() {
 				x: -20
 			},
 			xAxis: {
-				categories: ['Jan 09', 'Jan 10', 'Jan 11', 'Jan 12', 'Jan 13', 'Jan 14','Jan 15']
+				categories: ['Jan 23', 'Jan 24', 'Jan 25', 'Jan 26', 'Jan 27', 'Jan 28','Jan 29']
 			},
 			yAxis: {
 				title: {
-					text: 'Total Commits'
+					text: 'Total Hash Rate'
 				},
 				plotLines: [{
 					value: 0,
@@ -384,8 +384,8 @@ $(document).ready(function() {
 				borderWidth: 0
 			},
 			series: [{
-				name: 'Total Commits',
-				data: [272736832,307081470,284858469,296980106,358784281,330062320,301646358]
+				name: 'Total Hash Ratee',
+				data: [358778281,325690872,299460103,338805663,327826559,277602547,334424767]
 			}]
 		});
 	}	
