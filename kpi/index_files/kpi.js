@@ -60,7 +60,7 @@ $(document).ready(function() {
 				x: -20
 			},
 			xAxis: {
-				categories: ['Jan 22','Jan 23', 'Jan 24', 'Jan 25', 'Jan 26', 'Jan 27', 'Jan 28','Jan 29']
+				categories: ['Jan 28', 'Jan 29', 'Jan 30', 'Jan 31', 'Feb 1','Feb 2','Feb 3','Feb 4']
 			},
 			yAxis: {
 				title: {
@@ -81,7 +81,7 @@ $(document).ready(function() {
 			},
 			series: [{
 				name: 'Total Transacitons',
-				data: [104481,112540,87047,100251,89630,82358,105423,86914]
+				data: [104481,112540,87047,100251,82358,105423,93499,89739]
 			}]
 		});		
 	}
@@ -98,7 +98,7 @@ $(document).ready(function() {
 				x: -20
 			},
 			xAxis: {
-				categories: ['July 2014', 'Aug 2014', 'Sept 2014', 'Oct 2014', 'Nov 2014', 'Dec 2014','Jan 2015']
+				categories: ['Aug 2014', 'Sept 2014', 'Oct 2014', 'Nov 2014', 'Dec 2014','Jan 2015','Feb 2015']
 			},
 			yAxis: {
 				title: {
@@ -119,7 +119,7 @@ $(document).ready(function() {
 			},
 			series: [{
 				name: 'Total Coins',
-				data: [13695100,13705975,13709500,13713175,13717275,13719900,13776175]
+				data: [13705975,13709500,13713175,13717275,13719900,13776175,13802875]
 			}]
 		});		
 	}
@@ -136,7 +136,7 @@ $(document).ready(function() {
 				x: -20
 			},
 			xAxis: {
-				categories: ['June', 'July', 'August', 'Sept', 'Oct', 'Nov','Dec']
+				categories: ['July', 'August', 'Sept', 'Oct', 'Nov','Dec','Jan']
 			},
 			yAxis: {
 				title: {
@@ -157,7 +157,7 @@ $(document).ready(function() {
 			},
 			series: [{
 				name: 'Total Businesses',
-				data: [349,414,431,479,512,541,580]
+				data: [414,431,479,512,541,580,601]
 			}]
 		});			
 	}
@@ -174,7 +174,7 @@ $(document).ready(function() {
 				x: -20
 			},
 			xAxis: {
-				categories: ['Jan 24', 'Jan 25', 'Jan 26', 'Jan 27', 'Jan 28', 'Jan 29']
+				categories: ['Jan 29','Jan 30','Feb 1','Feb 2','Feb 3','Feb 4']
 			},
 			yAxis: {
 				title: {
@@ -195,7 +195,7 @@ $(document).ready(function() {
 			},
 			series: [{
 				name: 'Total Downloads',
-				data: [504,346,468,340,338,92]
+				data: [285,260,301,306,288,346,202]
 			}]
 		});		
 	}
@@ -212,7 +212,7 @@ $(document).ready(function() {
 				x: -20
 			},
 			xAxis: {
-				categories: ['July', 'August', 'Sept', 'Oct', 'Nov','Dec','Jan']
+				categories: ['August', 'Sept', 'Oct', 'Nov','Dec','Jan','Feb']
 			},
 			yAxis: {
 				title: {
@@ -233,7 +233,7 @@ $(document).ready(function() {
 			},
 			series: [{
 				name: 'Total Users',
-				data: [1930905,2107985,2276636,2407862,2519771,2657865,2855601]
+				data: [1930905,2107985,2276636,2407862,2519771,2657865,2889289]
 			}]
 		});		
 	}
@@ -250,11 +250,11 @@ $(document).ready(function() {
 				x: -20
 			},
 			xAxis: {
-				categories: ['July', 'August', 'Sept', 'Oct', 'Nov','Dec','Jan']
+				categories: ['August', 'Sept', 'Oct', 'Nov','Dec','Jan','Feb']
 			},
 			yAxis: {
 				title: {
-					text: 'Total Bitcoins in Circulation'
+					text: 'Total ATMs in Circulation'
 				},
 				plotLines: [{
 					value: 0,
@@ -271,7 +271,7 @@ $(document).ready(function() {
 			},
 			series: [{
 				name: 'Total ATMs',
-				data: [135,151,182,241,259,297,337]
+				data: [151,182,241,259,297,337,351]
 			}]
 		});
 	}
@@ -326,7 +326,7 @@ $(document).ready(function() {
 				x: -20
 			},
 			xAxis: {
-				categories: ['Dec 7','Dec 14', 'Dec 21', 'Dec 28', 'Jan 4', 'Jan 11','Jan 18']
+				categories: ['Dec 21', 'Dec 28', 'Jan 4', 'Jan 11','Jan 18','Jan 25','Feb 1']
 			},
 			yAxis: {
 				title: {
@@ -347,7 +347,7 @@ $(document).ready(function() {
 			},
 			series: [{
 				name: 'Total Commits',
-				data: [20,41,17,28,24,20,5]
+				data: [18,25,28,21,14,9,1]
 			}]
 		});
 	}
@@ -364,7 +364,7 @@ $(document).ready(function() {
 				x: -20
 			},
 			xAxis: {
-				categories: ['Jan 23', 'Jan 24', 'Jan 25', 'Jan 26', 'Jan 27', 'Jan 28','Jan 29']
+				categories: ['Jan 29','Jan 30', 'Jan 31', 'Feb 1','Feb 2','Feb 3','Feb 4']
 			},
 			yAxis: {
 				title: {
@@ -385,7 +385,7 @@ $(document).ready(function() {
 			},
 			series: [{
 				name: 'Total Hash Ratee',
-				data: [358778281,325690872,299460103,338805663,327826559,277602547,334424767]
+				data: [327876911,264487669,277602339,348786554,299546111,330321765,315959699]
 			}]
 		});
 	}	
