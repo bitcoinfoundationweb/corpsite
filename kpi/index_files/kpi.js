@@ -60,7 +60,7 @@ $(document).ready(function() {
 				x: -20
 			},
 			xAxis: {
-				categories: ['Jan 28', 'Jan 29', 'Jan 30', 'Jan 31', 'Feb 1','Feb 2','Feb 3','Feb 4']
+				categories: ['Feb 3','Feb 4','Feb 4','Feb 4','Feb 4','Feb 4','Feb 4']
 			},
 			yAxis: {
 				title: {
@@ -81,7 +81,7 @@ $(document).ready(function() {
 			},
 			series: [{
 				name: 'Total Transacitons',
-				data: [104481,112540,87047,100251,82358,105423,93499,89739]
+				data: [89630,105423,89297,88519,93499,83440,82716,97483]
 			}]
 		});		
 	}
@@ -119,7 +119,7 @@ $(document).ready(function() {
 			},
 			series: [{
 				name: 'Total Coins',
-				data: [13705975,13709500,13713175,13717275,13719900,13776175,13802875]
+				data: [13705975,13709500,13713175,13717275,13719900,13776175,13822300]
 			}]
 		});		
 	}
@@ -174,7 +174,7 @@ $(document).ready(function() {
 				x: -20
 			},
 			xAxis: {
-				categories: ['Jan 29','Jan 30','Feb 1','Feb 2','Feb 3','Feb 4']
+				categories: ['Feb 3','Feb 4','Feb 5','Feb 6','Feb 7','Feb 8','Feb 9']
 			},
 			yAxis: {
 				title: {
@@ -195,7 +195,7 @@ $(document).ready(function() {
 			},
 			series: [{
 				name: 'Total Downloads',
-				data: [285,260,301,306,288,346,202]
+				data: [346,294,313,321,320,313,219]
 			}]
 		});		
 	}
@@ -233,7 +233,7 @@ $(document).ready(function() {
 			},
 			series: [{
 				name: 'Total Users',
-				data: [1930905,2107985,2276636,2407862,2519771,2657865,2889289]
+				data: [1930905,2107985,2276636,2407862,2519771,2657865,2912046]
 			}]
 		});		
 	}
@@ -326,7 +326,7 @@ $(document).ready(function() {
 				x: -20
 			},
 			xAxis: {
-				categories: ['Dec 21', 'Dec 28', 'Jan 4', 'Jan 11','Jan 18','Jan 25','Feb 1']
+				categories: ['Dec 28', 'Jan 4', 'Jan 11','Jan 18','Jan 25','Feb 1','Feb 8']
 			},
 			yAxis: {
 				title: {
@@ -347,7 +347,7 @@ $(document).ready(function() {
 			},
 			series: [{
 				name: 'Total Commits',
-				data: [18,25,28,21,14,9,1]
+				data: [25,28,21,14,9,6,1]
 			}]
 		});
 	}
@@ -364,7 +364,7 @@ $(document).ready(function() {
 				x: -20
 			},
 			xAxis: {
-				categories: ['Jan 29','Jan 30', 'Jan 31', 'Feb 1','Feb 2','Feb 3','Feb 4']
+				categories: ['Feb 3','Feb 4','Feb 5','Feb 6','Feb 7','Feb 8','Feb 9']
 			},
 			yAxis: {
 				title: {
@@ -385,7 +385,7 @@ $(document).ready(function() {
 			},
 			series: [{
 				name: 'Total Hash Ratee',
-				data: [327876911,264487669,277602339,348786554,299546111,330321765,315959699]
+				data: [318011375,348746190,316947557,330321491,359044521,262615859,340323556]
 			}]
 		});
 	}	
