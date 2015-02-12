@@ -82,9 +82,17 @@
 					</DIV>
 				</HEADER>
 				<DIV class="post-content-wrap">
-					<H4>The 0.10.0 Milestone is weeks away from being released.  Please check back here for the latest updates as we will have a full commentary on release notes and an enumeration of changes that occurred since 0.9.3</H4>
-					<P>The following is a summation of important notices and pull requests currently available at the <A href="https://github.com/bitcoin/bitcoin/pulls?q=is%3Apr+is%3Aopen"> Bitcoin Core Github repository</A>.</P>
+					<H4>Important 0.10.0 announcement</H4>
+					<P>After some discussions on the mailing list, IRC, and Github, the release of Bitcoin Core 0.10.0 was put on hold pending inclusion of the Bip66[0] implementation.</P>
+					<p>There was a last-minute discussion about whether to limit the maximum signature size as a part of the DER checks, but the final decision was to leave that out since there would still exist edge-cases that would require operations beyond the scope of simple parsing[1].</p>
+					<p>After review, Pieter’s changes were merged in last Monday[2], followed by the tag of Release Candidate 4 on Thursday. The latest builds have been uploaded to <a href="https://bitcoin.org/bin/0.10.0/test/">https://bitcoin.org/bin/0.10.0/test/</a> .</p>
+					<p>As of now, there are no pending blockers for the final release, but that could still change during the rc4 testing period. The Github milestone[3] will list any blockers if they arise.</p>
+					<p>[0]: <a href="https://github.com/bitcoin/bips/blob/master/bip-0066.mediawiki">https://github.com/bitcoin/bips/blob/master/bip-0066.mediawiki</a><br/>
+					[1]: <a href="http://sourceforge.net/p/bitcoin/mailman/message/33340458/">http://sourceforge.net/p/bitcoin/mailman/message/33340458/</a><br/>
+					[2]: <a href="https://github.com/bitcoin/bitcoin/pull/5714">https://github.com/bitcoin/bitcoin/pull/5714</a><br/>
+					[3]: <a href="https://github.com/bitcoin/bitcoin/milestones/0.10.0">https://github.com/bitcoin/bitcoin/milestones/0.10.0</a></p>
 					<UL>
+						<LI>Watch the live stream of DevCore Boston . <a href="/DevCore">Watch Now</a></li>
 						<LI>Bitcoin core 0.10.0 Release notes available. <a href="https://github.com/bitcoin/bitcoin/blob/0.10/doc/release-notes.md">Read More</a></li>
 					</UL>
 				</DIV>
