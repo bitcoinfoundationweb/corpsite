@@ -60,7 +60,7 @@ $(document).ready(function() {
 				x: -20
 			},
 			xAxis: {
-				categories: ['Feb 3','Feb 4','Feb 4','Feb 4','Feb 4','Feb 4','Feb 4']
+				categories: ['Feb 18','Feb 19','Feb 20','Feb 21','Feb 22','Feb 23','Feb 24']
 			},
 			yAxis: {
 				title: {
@@ -81,7 +81,7 @@ $(document).ready(function() {
 			},
 			series: [{
 				name: 'Total Transacitons',
-				data: [89630,105423,89297,88519,93499,83440,82716,97483]
+				data: [105423,93499,93868,103551,107390,96709,82716,104054]
 			}]
 		});		
 	}
@@ -119,7 +119,7 @@ $(document).ready(function() {
 			},
 			series: [{
 				name: 'Total Coins',
-				data: [13705975,13709500,13713175,13717275,13719900,13776175,13822300]
+				data: [13705975,13709500,13713175,13717275,13719900,13776175,13877900]
 			}]
 		});		
 	}
@@ -174,7 +174,7 @@ $(document).ready(function() {
 				x: -20
 			},
 			xAxis: {
-				categories: ['Feb 3','Feb 4','Feb 5','Feb 6','Feb 7','Feb 8','Feb 9']
+				categories: ['Feb 18','Feb 19','Feb 20','Feb 21','Feb 22','Feb 23','Feb 24']
 			},
 			yAxis: {
 				title: {
@@ -195,7 +195,7 @@ $(document).ready(function() {
 			},
 			series: [{
 				name: 'Total Downloads',
-				data: [346,294,313,321,320,313,219]
+				data: [301,333,357,295,358,298,226]
 			}]
 		});		
 	}
@@ -233,7 +233,7 @@ $(document).ready(function() {
 			},
 			series: [{
 				name: 'Total Users',
-				data: [1930905,2107985,2276636,2407862,2519771,2657865,2912046]
+				data: [1930905,2107985,2276636,2407862,2519771,2657865,3010568]
 			}]
 		});		
 	}
@@ -271,7 +271,7 @@ $(document).ready(function() {
 			},
 			series: [{
 				name: 'Total ATMs',
-				data: [151,182,241,259,297,337,351]
+				data: [151,182,241,259,297,337,370]
 			}]
 		});
 	}
@@ -326,7 +326,7 @@ $(document).ready(function() {
 				x: -20
 			},
 			xAxis: {
-				categories: ['Dec 28', 'Jan 4', 'Jan 11','Jan 18','Jan 25','Feb 1','Feb 8']
+				categories: ['Jan 4', 'Jan 11','Jan 18','Jan 25','Feb 1','Feb 8','Feb 15']
 			},
 			yAxis: {
 				title: {
@@ -347,7 +347,7 @@ $(document).ready(function() {
 			},
 			series: [{
 				name: 'Total Commits',
-				data: [25,28,21,14,9,6,1]
+				data: [28,21,14,9,6,6,4]
 			}]
 		});
 	}
@@ -364,7 +364,7 @@ $(document).ready(function() {
 				x: -20
 			},
 			xAxis: {
-				categories: ['Feb 3','Feb 4','Feb 5','Feb 6','Feb 7','Feb 8','Feb 9']
+				categories: ['Feb 18','Feb 19','Feb 20','Feb 21','Feb 22','Feb 23','Feb 24']
 			},
 			yAxis: {
 				title: {

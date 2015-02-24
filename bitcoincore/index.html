@@ -21,7 +21,7 @@
 	<SCRIPT language="javascript" src="/index_files/jquery-ui.js"></SCRIPT>
 	<LINK href="/index_files/jquery-ui.css" rel="stylesheet"> 
 	<!-- Start of Bitcoin Foundation, Inc. Zendesk Widget script -->
-	<script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("//assets.zendesk.com/embeddable_framework/main.js","bitcoinfoundation.zendesk.com");/*]]>*/</script>
+	<script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(<arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("//assets.zendesk.com/embeddable_framework/main.js","bitcoinfoundation.zendesk.com");/*]]>*/</script>
 	<!-- End of Bitcoin Foundation, Inc. Zendesk Widget script -->		
 </HEAD> 
 
@@ -74,11 +74,46 @@
 			<DIV class="col-sm-12 col-md-9 col-md-offset-1 blog-content">
 				<ARTICLE class="blog-post">
 				<HEADER class="post-header">
-					<A class="title-link" href="https://bitcoinfoundation.org/bitcoincore/"><H2 class="post-title">February 2015</H2></A>											 
-					<DIV class="post-meta">by Core Dev Team, Last Updated on February 9, 2014</DIV>
+					<A class="title-link" href="https://bitcoinfoundation.org/bitcoincore/"><H2 class="post-title">Bitcoin Core version 0.10.0 is now available</H2></A>											 
+					<DIV class="post-meta">by Core Dev Team, Last Updated on 16 February 2015</DIV>
 					<DIV class="social-links">
-						<A class="share-twitter" href="http://twitter.com/intent" data-share-message="January 2015" data-share-url="https://bitcoinfoundation.org/bitcoincore/"><I class="fa fa-twitter"></I></A>
-						<A class="share-facebook" href="http://facebook.com/sharer.php" data-share-message="January 2015" data-share-url="https://bitcoinfoundation.org/bitcoincore/"><I class="fa fa-facebook"></I></A>
+						<A class="share-twitter" href="http://twitter.com/intent" data-share-message="Bitcoin Core 0.10.0" data-share-url="https://bitcoinfoundation.org/bitcoincore/"><I class="fa fa-twitter"></I></A>
+						<A class="share-facebook" href="http://facebook.com/sharer.php" data-share-message="Bitcoin Core 0.10.0" data-share-url="https://bitcoinfoundation.org/bitcoincore/"><I class="fa fa-facebook"></I></A>
+					</DIV>
+					<UL>
+						<LI>Download 0.10.0 <a href="https://bitcoin.org/bin/0.10.0/">here</a>.</li>
+						<LI>Report your issues <a href="https://github.com/bitcoin/bitcoin/issues">here</a>.</li>
+						<LI>Full release notes found <a href="https://github.com/bitcoin/bitcoin/blob/0.10/doc/release-notes.md">here</a>.</li>
+						<LI>Change log can be found <a href="https://github.com/bitcoin/bitcoin/blob/0.10/doc/release-notes.md#0100-change-log">here</a>.</li>
+						<LI>Contributor list can be found <a href="https://github.com/bitcoin/bitcoin/blob/0.10/doc/release-notes.md#credits">here</a>.</li>
+						<LI>If you are running an older version, shut it down. Wait until it has completely shut down (which might take a few minutes for older versions), then run the installer (on Windows) or just copy over /Applications/Bitcoin-Qt (on Mac) or bitcoind/bitcoin-qt (on Linux).</li>
+						<LI>Downgrade Warning! Because release 0.10.0 makes use of headers-first synchronization and parallel block download (see further), the block files and databases are not backwards-compatible with older versions of Bitcoin Core or other software.  Read the <a href="https://github.com/bitcoin/bitcoin/blob/0.10/doc/release-notes.md">release notes</a> for more information.</li>
+						<li>Notable changes:
+							<ol>
+								<li>Faster synchronizations (<a href="https://github.com/bitcoin/bitcoin/blob/0.10/doc/release-notes.md#faster-synchronization">read more</a>).</li>
+								<li>Transaction fee changes (<a href="https://github.com/bitcoin/bitcoin/blob/0.10/doc/release-notes.md#transaction-fee-changes">read more</a>).</li>
+								<li>RPC access control changes (<a href="https://github.com/bitcoin/bitcoin/blob/0.10/doc/release-notes.md#rpc-access-control-changes">read more</a>).</li>
+								<li>REST interface (<a href="https://github.com/bitcoin/bitcoin/blob/0.10/doc/release-notes.md#rest-interface">read more</a>).</li>
+								<li>RPC Server "Warm-up" Mode (<a href="https://github.com/bitcoin/bitcoin/blob/0.10/doc/release-notes.md#rpc-server-warm-up-mode">read more</a>).</li>
+								<li>Improved signing security (<a href="https://github.com/bitcoin/bitcoin/blob/0.10/doc/release-notes.md#improved-signing-security">read more</a>).</li>
+								<li>Watch only wallet support (<a href="https://github.com/bitcoin/bitcoin/blob/0.10/doc/release-notes.md#watch-only-wallet-support">read more</a>).</li>
+								<li>Consensus library (<a href="https://github.com/bitcoin/bitcoin/blob/0.10/doc/release-notes.md#consensus-library">read more</a>).</li>
+								<li>Standard script rules relaxed for P2SH addresses (<a href="https://github.com/bitcoin/bitcoin/blob/0.10/doc/release-notes.md#standard-script-rules-relaxed-for-p2sh-addresses">read more</a>).</li>
+								<li>bitcoin-tx (<a href="https://github.com/bitcoin/bitcoin/blob/0.10/doc/release-notes.md#bitcoin-tx">read more</a>).</li>
+								<li>Mining and relay policy enhancements (<a href="https://github.com/bitcoin/bitcoin/blob/0.10/doc/release-notes.md#mining-and-relay-policy-enhancements">read more</a>).</li>
+								<li>BIP 66: strict DER encoding for signatures (<a href="https://github.com/bitcoin/bitcoin/blob/0.10/doc/release-notes.md#bip-66-strict-der-encoding-for-signatures">read more</a>).</li>
+							</ol>
+						</li>
+					</UL>					
+				</HEADER>
+				
+				<ARTICLE class="blog-post">
+				<HEADER class="post-header">
+					<A class="title-link" href="https://bitcoinfoundation.org/bitcoincore/"><H2 class="post-title">February 2015</H2></A>											 
+					<DIV class="post-meta">by Core Dev Team, Last Updated on 9 February 2015</DIV>
+					<DIV class="social-links">
+						<A class="share-twitter" href="http://twitter.com/intent" data-share-message="February 2015" data-share-url="https://bitcoinfoundation.org/bitcoincore/"><I class="fa fa-twitter"></I></A>
+						<A class="share-facebook" href="http://facebook.com/sharer.php" data-share-message="February 2015" data-share-url="https://bitcoinfoundation.org/bitcoincore/"><I class="fa fa-facebook"></I></A>
 					</DIV>
 				</HEADER>
 				<DIV class="post-content-wrap">
@@ -101,7 +136,7 @@
 				<ARTICLE class="blog-post">
 				<HEADER class="post-header">
 					<A class="title-link" href="https://bitcoinfoundation.org/bitcoincore/"><H2 class="post-title">January 2015</H2></A>											 
-					<DIV class="post-meta">by Core Dev Team, Last Updated on January 31, 2014</DIV>
+					<DIV class="post-meta">by Core Dev Team, Last Updated on 31 January 2015</DIV>
 					<DIV class="social-links">
 						<A class="share-twitter" href="http://twitter.com/intent" data-share-message="January 2015" data-share-url="https://bitcoinfoundation.org/bitcoincore/"><I class="fa fa-twitter"></I></A>
 						<A class="share-facebook" href="http://facebook.com/sharer.php" data-share-message="January 2015" data-share-url="https://bitcoinfoundation.org/bitcoincore/"><I class="fa fa-facebook"></I></A>
@@ -124,7 +159,7 @@
 				<ARTICLE class="blog-post">
 				<HEADER class="post-header">
 					<A class="title-link" href="https://bitcoinfoundation.org/bitcoincore/"><H2 class="post-title">Bitcoin Core - Version 0.10 Update</H2></A>											 
-					<DIV class="post-meta">by Cory Fields, Developer, January 20, 2014</DIV>
+					<DIV class="post-meta">by Cory Fields, Developer, 20 January 2015</DIV>
 					<DIV class="social-links">
 						<A class="share-twitter" href="http://twitter.com/intent" data-share-message="Bitcoin Core - Version 0.10 Update" data-share-url="https://bitcoinfoundation.org/bitcoincore/"><I class="fa fa-twitter"></I></A>
 						<A class="share-facebook" href="http://facebook.com/sharer.php" data-share-message="Bitcoin Core - Version 0.10 Update" data-share-url="https://bitcoinfoundation.org/bitcoincore/"><I class="fa fa-facebook"></I></A>
@@ -143,7 +178,7 @@
 				<ARTICLE class="blog-post">
 				<HEADER class="post-header">
 					<A class="title-link" href="https://bitcoinfoundation.org/bitcoincore/"><H2 class="post-title">Bitcoin Core Update</H2></A>											 
-					<DIV class="post-meta">Bitcoin Core Developer Gregory Maxwell via Sourceforge, Posted January 9, 2014</DIV>
+					<DIV class="post-meta">Bitcoin Core Developer Gregory Maxwell via Sourceforge, Posted 9 January 2015</DIV>
 					<DIV class="social-links">
 						<A class="share-twitter" href="http://twitter.com/intent" data-share-message="January 2015" data-share-url="https://bitcoinfoundation.org/bitcoincore/"><I class="fa fa-twitter"></I></A>
 						<A class="share-facebook" href="http://facebook.com/sharer.php" data-share-message="January 2015" data-share-url="https://bitcoinfoundation.org/bitcoincore/"><I class="fa fa-facebook"></I></A>
@@ -328,8 +363,8 @@
 <SCRIPT src="/index_files/wb-bootstrap.min.js" type="text/javascript"></SCRIPT>
 <SCRIPT language="javascript">
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  (i[r].q=i[r].q||[]).push(<arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(<a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
   ga('create', 'UA-56133351-1', 'auto');
